@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Enviar SMS gratis</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="dist/css/materialize.min.css"  rel="stylesheet" />
+        <link href="dist/font/material-design-icons/Material-Design-Icons.svg"  rel="stylesheet" />
+        <script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="dist/js/materialize.min.js"></script>
+        <script type="text/javascript" src="sms.js"></script>
+    </head>
+    <body>
+        <div class="row">
+                <div class="row">
+                    <div class="input-field col s1"></div>
+                    <div class="input-field col s10">
+                        <input placeholder="5XXXXXXX" id="number" type="text" style="width: 100%">
+                        <label for="number">Número</label>
+                    </div>
+                    <div class="input-field col s1"></div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s1"></div>
+                    <div class="input-field col s10">
+                        <textarea placeholder="Mensaje" id="text" class="materialize-textarea"></textarea>
+                        <label for="number">Mensaje</label>
+                    </div>
+                    <div class="input-field col s1"></div>
+                </div>
+                <div class="row col s12">
+                    <div class="input-field">
+                        <button class="btn smart right" onclick="sendSms()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
